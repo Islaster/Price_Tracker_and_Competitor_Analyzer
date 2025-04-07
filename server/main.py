@@ -24,4 +24,8 @@ FAKE_STORE_URL = "https://fakestoreapi.com/products"
 def get_products():
     response = requests.get(FAKE_STORE_URL)
     return response.json()
+@app.get("/api/products/{product_id}")
+def get_product(product_id: int):
+    response = requests.get(f"https://fakestoreapi.com/products/{product_id}")
+    return response.json()
 
