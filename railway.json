@@ -1,0 +1,10 @@
+{
+    "services": [
+      {
+        "name": "api-backend",
+        "startCommand": "env/bin/python -m uvicorn run:app --reload",
+        "installCommand": "pip install -r requirements.txt"
+      }
+    ]
+  }
+  
