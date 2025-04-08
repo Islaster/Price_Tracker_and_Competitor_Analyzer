@@ -2,6 +2,8 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import type { Product } from "../types";
+import AddToCartButton from "./addToCartButton";
+import BackButton from "./backButton";
 
 export default function ProductDetail() {
   const { id } = useParams<{ id: string }>();
@@ -18,10 +20,16 @@ export default function ProductDetail() {
 
   return (
     <div className="p-6 max-w-2xl mx-auto">
-      <img src={product.image} alt={product.title} className="w-full mb-4" />
+      <BackButton />
+      <img
+        src={product.image}
+        alt={product.title}
+        className="w-1/2 h-auto object-contain mx-auto"
+      />
       <h1 className="text-3xl font-bold mb-2">{product.title}</h1>
-      <p className="text-xl text-gray-600 mb-4">${product.price}</p>
+      <p className="text-xl text-gray-600 mb-4">${product.price.toFixed(2)}</p>
       <p className="text-gray-800">{product.description}</p>
+      <AddToCartButton product={product} />
     </div>
   );
 }
