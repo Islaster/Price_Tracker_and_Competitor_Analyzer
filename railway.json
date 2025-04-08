@@ -1,7 +1,8 @@
 {
     "services": [
       {
-        "name": "api-backend",
+        "name": "backend",
+        "rootDir": "server",
         "startCommand": "env/bin/python -m uvicorn run:app --reload",
         "installCommand": "pip install -r requirements.txt"
       }
