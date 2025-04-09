@@ -12,7 +12,7 @@ export default function ProductGrid() {
 
   useEffect(() => {
     fetch(
-      "https://pricetrackerandcompetitorana-production.up.railway.app//api/products"
+      "https://pricetrackerandcompetitorana-production.up.railway.app/api/products"
     )
       .then((res) => res.json())
       .then((data) => {

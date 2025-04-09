@@ -11,7 +11,7 @@ export default function ProductDetail() {
 
   useEffect(() => {
     fetch(
-      `https://pricetrackerandcompetitorana-production.up.railway.app//api/products/${id}`
+      `https://pricetrackerandcompetitorana-production.up.railway.app/api/products/${id}`
     )
       .then((res) => res.json())
       .then((data) => setProduct(data))
