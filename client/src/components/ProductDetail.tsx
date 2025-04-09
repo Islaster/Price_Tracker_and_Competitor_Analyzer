@@ -10,7 +10,9 @@ export default function ProductDetail() {
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/products/${id}`)
+    fetch(
+      `https://pricetrackerandcompetitorana-production.up.railway.app//api/products/${id}`
+    )
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch(() => setProduct(null));

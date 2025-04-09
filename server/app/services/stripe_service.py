@@ -13,8 +13,8 @@ async def create_checkout_session(request: Request):
             payment_method_types=["card"],
             line_items=data["items"],
             mode="payment",
-            success_url="http://localhost:5173/",
-            cancel_url="http://localhost:5173/cancel",
+            success_url="https://price-tracker-and-competitor-analyzer.vercel.app/",
+            cancel_url="https://price-tracker-and-competitor-analyzer.vercel.app/",
         )
         return JSONResponse({"url": session.url})
     except Exception as e:

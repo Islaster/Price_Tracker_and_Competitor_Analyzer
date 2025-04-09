@@ -11,7 +11,9 @@ export default function ProductGrid() {
   const [filtered, setFiltered] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/products")
+    fetch(
+      "https://pricetrackerandcompetitorana-production.up.railway.app//api/products"
+    )
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
