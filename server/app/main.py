@@ -5,7 +5,7 @@ from app.api import stripe
 
 app = FastAPI()
 
-origins = ["http://localhost:5173", "https://price-tracker-and-competitor-analyzer.vercel.app/"]
+origins = ["http://localhost:5173", "https://price-tracker-and-competitor-analyzer.vercel.app"]
 
 app.add_middleware(
     CORSMiddleware,
