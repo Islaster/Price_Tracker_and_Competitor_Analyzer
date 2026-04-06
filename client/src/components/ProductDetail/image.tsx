@@ -5,7 +5,7 @@ type ImageProps = {
   alt: string;
 };
 
-const Image: React.FC<ImageProps> = ({ images, alt }) => {
+const Image = ({ images, alt }: ImageProps) => {
   const validImages = images?.filter(Boolean) ?? [];
   const [currentIndex, setCurrentIndex] = useState(0);
 

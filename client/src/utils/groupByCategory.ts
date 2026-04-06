@@ -4,7 +4,7 @@ import { Product } from "../types/index";
 
 export function groupByCategory(products: Product[]) {
   return products.reduce((groups: Record<string, Product[]>, product) => {
-    const category = product.category;
+    const category = product.category.name;
     if (!groups[category]) {
       groups[category] = [];
     }

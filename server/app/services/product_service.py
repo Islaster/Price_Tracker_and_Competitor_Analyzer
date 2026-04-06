@@ -3,7 +3,7 @@ import requests
 from typing import List
 from app.models.product import Product
 
-FAKE_STORE_URL = "https://fakestoreapi.com/products"
+FAKE_STORE_URL = "https://api.escuelajs.co/api/v1/products"
 
 def fetch_products() -> List[Product]:
     response = requests.get(FAKE_STORE_URL)
