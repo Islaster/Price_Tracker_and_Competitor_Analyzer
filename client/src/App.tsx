@@ -1,11 +1,7 @@
-import ProductGrid from "./components/ProductGrid";
+import ShopPage from "./pages/ShopPage";
+
 function App() {
-  return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold">Fake Store Products</h1>
-      <ProductGrid />
-    </div>
-  );
+  return <ShopPage />;
 }
 
 export default App;
