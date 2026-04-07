@@ -35,7 +35,7 @@ export default function FilterPanel({
   }, [minPriceLimit]);
 
   return (
-    <aside className="flex flex-col gap-6 w-56 min-w-56 border-r border-gray-200 p-4 pt-0 min-h-screen">
+    <aside className="flex flex-col gap-6 w-56 min-w-56 border-r border-gray-200 p-4 pt-0 sticky top-0 h-screen overflow-y-auto">
       {/* Category */}
       <div className="pt-14">
         <h3 className="font-medium text-sm text-gray-800 mb-3">Category</h3>
