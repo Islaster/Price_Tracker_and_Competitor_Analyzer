@@ -1,5 +1,5 @@
 // ShopPage.tsx
-import FilterPanel from "../components/FilterBar";
+import FilterPanel from "../components/FilterPanel";
 import ProductGrid from "../components/ProductGrid";
 import { useProductContext } from "../context/ProductContext";
 import { useEffect, useState } from "react";
